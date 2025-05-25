@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kael - Portfólio</title>
-    <link rel="stylesheet" href="kael.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kael - Portfólio</title>
+  <link rel="stylesheet" href="kael.css" />
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="WhatsApp Image 2025-03-04 at 14.48.25_a8a81bcf.jpg" alt="Sua Foto de Perfil">
-            <div class="social-links">
-                <a href="https://wa.me/51998337286" target="_blank">
-                    <img src="imagens/image.png" alt="WhatsApp">
-                </a>
-                <a href="mailto:kaeljunior122@gmail.com" target="_blank">
-                    <img src="imagens/gmail-new.png" alt="Gmail">
-                </a>
-                <a href="https://www.linkedin.com/in/kaellima" target="_blank">
-                    <img src="imagens/linkedin.png" alt="LinkedIn">
-                </a>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="profile">
+      <img src="WhatsApp Image 2025-03-04 at 14.48.25_a8a81bcf.jpg" alt="Kael Foto" />
+      <h1>Kael Lima</h1>
+      <p>Desenvolvedor e Estudante de TI</p>
+      <div class="social-links">
+        <a href="https://wa.me/51998337286" target="_blank">
+          <img src="imagens/image.png" alt="WhatsApp" />
+        </a>
+        <a href="mailto:kaeljunior122@gmail.com" target="_blank">
+          <img src="imagens/gmail-new.png" alt="Gmail" />
+        </a>
+        <a href="https://www.linkedin.com/in/kaellima" target="_blank">
+          <img src="imagens/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </header>
 
-   <main>
+  <main>
     <section id="projects">
-        <h2>Meus Projetos</h2>
+      <h2>Meus Projetos</h2>
+      <div class="search-bar">
+        <input type="text" id="project-search" placeholder="Buscar projeto..." />
+      </div>
 
-        <div class="search-bar">
-            <input type="text" id="project-search" placeholder="Buscar projeto...">
+      <!-- Sites -->
+      <div class="project-container">
+        <h3>Sites</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4>Sistema de Login</h4>
+            <a href="https://kaellima122.github.io/jogo/" target="_blank">
+              <img src="imagens/login-preview.png" alt="Preview Sistema de Login" />
+            </a>
+            <p>Projeto de sistema de login com validação e design simples.</p>
+          </div>
         </div>
+      </div>
 
-        <!-- Container 1: Sites -->
-        <div class="project-container" id="container-1">
-            <h3>Sites</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Sistema de Login</h4>
-                    <a href="https://kaellima122.github.io/jogo/" target="_blank">
-                        <img src="imagens/login-preview.png" alt="Preview do Projeto de Login">
-                    </a>
-                    <p>Projeto de sistema de login com validação e design simples.</p>
-                </div>
-                <!-- Adicione outros sites aqui -->
-            </div>
+      <!-- Aplicações -->
+      <div class="project-container">
+        <h3>Aplicações</h3>
+        <div class="projects-grid">
+          <div class="project-card coming-soon">
+            <h4>Em breve...</h4>
+            <p>Outros projetos serão adicionados aqui.</p>
+          </div>
         </div>
-
-        <!-- Container 2: Aplicações -->
-        <div class="project-container" id="container-2">
-            <h3>Aplicações</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Em breve...</h4>
-                    <p>Outros projetos serão adicionados aqui.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-</main>
+  </main>
 
-
-    <script src="kael.js"></script>
+  <script src="kael.js"></script>
 </body>
 </html>
