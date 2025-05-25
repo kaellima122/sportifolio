@@ -1,124 +1,129 @@
-/* Reset básico */
+/* Reset & base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 0 1rem;
 }
 
-/* Header com perfil */
+/* Header com efeito glassmorphism */
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
+  text-align: center;
+  padding: 2rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .profile img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffff;
+  margin-bottom: 1rem;
+}
+.profile h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.profile p {
+  font-size: 1.1rem;
+  color: #ddd;
 }
 
-/* Ícones sociais */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+.social-links a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+.social-links img:hover {
+  transform: scale(1.2);
 }
 
-.social-links a img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.2s ease;
-}
-
-.social-links a:hover img {
-    transform: scale(1.1);
-}
-
-/* Seção de projetos */
+/* Section projetos */
 #projects {
-    padding: 2rem 1rem;
-    text-align: center;
+  padding: 3rem 0;
+  text-align: center;
 }
 
-#projects h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
 }
 
-/* Barra de busca */
+/* Search */
 .search-bar {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-
 #project-search {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 400px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px #00ffff80;
+  outline: none;
 }
 
-/* Grid de projetos */
+/* Cards de projeto */
+.project-container {
+  margin: 2rem 0;
+}
+.project-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0ff;
+}
+
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-/* Cartão de projeto */
 .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 255, 255, 0.4);
 }
 
 .project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  max-height: 180px;
 }
 
-.project-card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    color: #333;
-}
-
-.project-card p {
-    font-size: 0.95rem;
-    color: #555;
-}
-
-/* Responsivo para telas pequenas */
-@media (max-width: 480px) {
-    .profile img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .project-card img {
-        height: 150px;
-    }
+/* Responsivo */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+  .project-card {
+    padding: 1rem;
+  }
 }
