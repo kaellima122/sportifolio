@@ -4,126 +4,126 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Fonte e reset geral */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   color: #fff;
-  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
 }
 
-/* Header com efeito glassmorphism */
-header {
-  text-align: center;
-  padding: 2rem 0;
-  background: rgba(255, 255, 255, 0.05);
+/* Perfil */
+header .profile {
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+header .profile:hover {
+  transform: scale(1.02);
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00ffff;
-  margin-bottom: 1rem;
-}
-.profile h1 {
-  font-size: 2rem;
-  margin: 0.5rem 0;
-}
-.profile p {
-  font-size: 1.1rem;
-  color: #ddd;
+  border: 4px solid #fff;
 }
 
-.social-links a {
-  margin: 0 0.5rem;
-  display: inline-block;
+/* Ícones sociais */
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .social-links img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  filter: brightness(1.2);
   transition: transform 0.3s ease;
 }
 .social-links img:hover {
   transform: scale(1.2);
 }
 
-/* Section projetos */
-#projects {
-  padding: 3rem 0;
+/* Seções */
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 40px;
+}
+h2, h3 {
   text-align: center;
 }
 
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #00ffff;
-}
-
-/* Search */
-.search-bar {
-  margin-bottom: 2rem;
-}
-#project-search {
-  padding: 0.75rem;
+/* Barra de busca */
+.search-bar input {
   width: 100%;
   max-width: 400px;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
   border: none;
-  box-shadow: 0 0 10px #00ffff80;
   outline: none;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.15);
+  color: #fff;
 }
 
-/* Cards de projeto */
+/* Containers de projetos */
 .project-container {
-  margin: 2rem 0;
-}
-.project-container h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #0ff;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
+/* Grid responsivo */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 20px;
 }
 
+/* Card de projeto */
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 1.5rem;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 255, 255, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  max-height: 180px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 2rem;
-  }
-  .profile img {
-    width: 120px;
-    height: 120px;
-  }
-  .project-card {
-    padding: 1rem;
-  }
+/* Títulos */
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.5em;
+  color: #f0f0f0;
 }
