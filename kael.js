@@ -3,13 +3,13 @@ const projects = [
         title: 'Projeto 1',
         description: 'Descrição do projeto 1...',
         image: 'assets/images/projeto1.jpg',
-        link: 'file:///C:/Users/Usuario/Desktop/site%20anime/index.html'
+        link: 'https://kaellima122.github.io/jogo/'
     },
     {
         title: 'Projeto 2',
         description: 'Descrição do projeto 2...',
         image: 'assets/images/projeto2.jpg',
-        link: 'file:///C:/Users/Usuario/Desktop/site%20anime/site%20gemini/kael.html'
+        link: 'https://kaellima122.github.io/jogo/'
     },
     // Adicione mais projetos aqui...
 ];
