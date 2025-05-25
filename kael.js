@@ -1,7 +1,7 @@
 const projects = [
     {
         title: 'Projeto 1',
-        description: 'Descrição do projeto 1...',
+        description: 'Projeto de sistema de login com validação e design simples.',
         image: 'assets/images/projeto1.jpg',
         link: 'https://kaellima122.github.io/jogo/'
     },
