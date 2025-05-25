@@ -2,25 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kael - Portfólio</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  
+  <!-- AOS - Animações ao rolar -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  
+  <!-- CSS próprio -->
   <link rel="stylesheet" href="kael.css" />
 </head>
 <body>
   <header>
-    <div class="profile">
-      <img src="WhatsApp Image 2025-03-04 at 14.48.25_a8a81bcf.jpg" alt="Kael Foto" />
-      <h1>Kael Lima</h1>
-      <p>Desenvolvedor e Estudante de TI</p>
+    <div class="profile" data-aos="fade-down">
+      <img src="WhatsApp Image 2025-03-04 at 14.48.25_a8a81bcf.jpg" alt="Foto de Perfil"/>
       <div class="social-links">
         <a href="https://wa.me/51998337286" target="_blank">
-          <img src="imagens/image.png" alt="WhatsApp" />
+          <img src="imagens/image.png" alt="WhatsApp"/>
         </a>
         <a href="mailto:kaeljunior122@gmail.com" target="_blank">
-          <img src="imagens/gmail-new.png" alt="Gmail" />
+          <img src="imagens/gmail-new.png" alt="Gmail"/>
         </a>
         <a href="https://www.linkedin.com/in/kaellima" target="_blank">
-          <img src="imagens/linkedin.png" alt="LinkedIn" />
+          <img src="imagens/linkedin.png" alt="LinkedIn"/>
         </a>
       </div>
     </div>
@@ -28,30 +34,31 @@
 
   <main>
     <section id="projects">
-      <h2>Meus Projetos</h2>
-      <div class="search-bar">
-        <input type="text" id="project-search" placeholder="Buscar projeto..." />
+      <h2 data-aos="fade-up">Meus Projetos</h2>
+
+      <div class="search-bar" data-aos="zoom-in">
+        <input type="text" id="project-search" placeholder="Buscar projeto...">
       </div>
 
       <!-- Sites -->
-      <div class="project-container">
+      <div class="project-container" id="container-1" data-aos="zoom-out-up">
         <h3>Sites</h3>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up">
             <h4>Sistema de Login</h4>
             <a href="https://kaellima122.github.io/jogo/" target="_blank">
-              <img src="imagens/login-preview.png" alt="Preview Sistema de Login" />
+              <img src="imagens/login-preview.png" alt="Preview do Projeto de Login">
             </a>
-            <p>Projeto de sistema de login com validação e design simples.</p>
+            <p>Projeto com validação, design simples e responsivo.</p>
           </div>
         </div>
       </div>
 
       <!-- Aplicações -->
-      <div class="project-container">
+      <div class="project-container" id="container-2" data-aos="zoom-in-up">
         <h3>Aplicações</h3>
         <div class="projects-grid">
-          <div class="project-card coming-soon">
+          <div class="project-card" data-aos="flip-left">
             <h4>Em breve...</h4>
             <p>Outros projetos serão adicionados aqui.</p>
           </div>
@@ -60,6 +67,11 @@
     </section>
   </main>
 
+  <!-- JS do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1200 });</script>
+
+  <!-- Seu JS -->
   <script src="kael.js"></script>
 </body>
 </html>
